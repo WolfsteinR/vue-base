@@ -1,0 +1,30 @@
+{
+  "name": "vue-2.0-base",
+  "description": "A Vue.js base project",
+  "author": "Sergey Zhdanov <wolfsz@yandex.ru>",
+  "private": true,
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "predeploy": "npm run build",
+    "deploy": "surge --project . --domain vue-base.surge.sh"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "vue": "^2.3.3",
+    "vuex": "^3.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.6.1",
+    "cross-env": "^4.0.0",
+    "css-loader": "^0.28.1",
+    "file-loader": "^0.11.1",
+    "surge": "^0.21.3",
+    "vue-loader": "^12.0.3",
+    "vue-template-compiler": "^2.3.3",
+    "webpack": "^4.39.2",
+    "webpack-dev-server": "^4.39.2"
+  }
+}
